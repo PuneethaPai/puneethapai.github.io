@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e 
 
 if [ "`git status -s`" ]
 then
@@ -26,4 +25,4 @@ echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages $(date)"
 
 echo "Pushing to github"
-git push --all
+git push origin gh-pages -f
