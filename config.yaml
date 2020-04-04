@@ -1,4 +1,4 @@
-baseURL: https://puneethapai.github.io/puneeth
+baseURL: ""
 languageCode: en-us
 title: Puneeth
 theme: vanilla-bootstrap-hugo-theme
@@ -21,7 +21,7 @@ menu:
     weight: 1
   - name: Blog
     pre: edit
-    url: /post/
+    url: /blogs/
     weight: 2
   - name: Tags
     pre: tag

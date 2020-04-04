@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<div id="home-jumbotron" class="jumbotron text-center">
+    {{ with .Content }}
+    <h1>{{ $.Page.Title }}</h1>
+    {{ . }}
+    {{ else }}
+    <h1>{{ .Site.Title }}</h1>
+    <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+    {{ end }}
+
+    {{ range .Site.Pages.ByPublishDate.Reverse }}
+    <p>
+        <a class="font-125" href="{{ .Permalink }}">{{ .Title }}</a>
+        <br>
+        {{ partial "date-and-tags.html" . }}
+    </p>
+    {{ end }}
+</div>
+{{ end }}
