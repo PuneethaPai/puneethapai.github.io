@@ -1,4 +1,4 @@
-baseURL: "/puneeth"
+baseURL: ""
 languageCode: en-us
 title: Puneeth
 theme: vanilla-bootstrap-hugo-theme
@@ -29,7 +29,7 @@ menu:
     weight: 3
   - name: Categories
     pre: tag
-    url: /category/
+    url: /categories/
     weight: 3
   - name: About
     pre: smile

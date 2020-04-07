@@ -9,7 +9,7 @@
     <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
     {{ end }}
 
-    {{ range .Site.Pages.ByPublishDate.Reverse }}
+    {{ range .Pages.ByPublishDate.Reverse }}
     <p>
         <a class="font-125" href="{{ .Permalink }}">{{ .Title }}</a>
         <br>
