@@ -1,2 +1,5 @@
 themes/soho/
 public/
+
+.env/
+notebooks/
