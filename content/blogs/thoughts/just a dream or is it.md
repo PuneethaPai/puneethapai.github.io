@@ -1,5 +1,5 @@
 ---
-title: "Dream. or is it !!"
+title: "Just a dream. or is it !!"
 date: 2020-06-29T22:22:14+05:30
 categories: ['dreams', 'thoughts']
 tags: ['cherish', 'learn', 'open']
