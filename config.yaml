@@ -2,7 +2,7 @@ baseURL: ""
 languageCode: en-us
 title: Puneeth
 theme: vanilla-bootstrap-hugo-theme
-googleAnalytics: 
+googleAnalytics: G-ZEEHF1CDJ0
 
 taxonomies:
   tag: tags
