@@ -2,7 +2,7 @@ name: Publish to gh-pages Branch
 on:
     push:
       branches:
-        - master
+        - source
 
 jobs:
   deploy:
@@ -19,10 +19,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify -b "https://puneethapai.github.io/puneeth/"
+        run: hugo --minify -b "https://puneethapai.github.io/"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: master  # deploying branch
