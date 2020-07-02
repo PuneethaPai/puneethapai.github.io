@@ -1,4 +1,0 @@
-- [ ] pyleaflet
-- [ ] pytreejs
-- [ ] pyvolume
-- [ ] move points in graphs for logistic / svm to see how the classifier boundry  changes
