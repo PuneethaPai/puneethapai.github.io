@@ -1,5 +1,5 @@
 ---
-title: "The Only Way Is Through"
+title: "The Only Way Is Through: Part1"
 date: 2020-09-16T07:00:17+05:30
 categories: ["learning"]
 tags: ["thoughts", "growth"]
