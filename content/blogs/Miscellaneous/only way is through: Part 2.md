@@ -1,7 +1,6 @@
 ---
 title: "The Only Way Is Through: Part 2"
 date: 2020-09-17T16:58:43+05:30
-draft: true
 categories: ["learning"]
 tags: ["thoughts", "growth"]
 ---
