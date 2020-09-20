@@ -39,10 +39,23 @@ is a pretty handy subprocess execution for any command.</p><div class=highlight>
 
 path <span style=color:#f92672>=</span> Path(<span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>some/path/</span><span style=color:#e6db74>&#34;</span>)
 
-path<span style=color:#f92672>.</span>name <span style=color:#75715e># File/Folder Name</span>
+<span style=color:#75715e># File/Folder Name</span>
+path<span style=color:#f92672>.</span>name 
 
+<span style=color:#75715e># Read</span>
+path<span style=color:#f92672>.</span>read_text()
+path<span style=color:#f92672>.</span>read_bytes()
+
+<span style=color:#75715e># Write</span>
+path<span style=color:#f92672>.</span>write_text(<span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>data</span><span style=color:#e6db74>&#34;</span>)
+path<span style=color:#f92672>.</span>write_bytes(<span style=color:#e6db74>b</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>data</span><span style=color:#e6db74>&#34;</span>)
+
+<span style=color:#75715e># Navigation</span>
+path <span style=color:#f92672>/</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>some/other/file</span><span style=color:#e6db74>&#34;</span>
+path <span style=color:#f92672>/</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>some</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>/</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>other</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>/</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>file</span><span style=color:#e6db74>&#34;</span>
+
+<span style=color:#75715e># Listing all files</span>
 paths_matching_pattern <span style=color:#f92672>=</span> path<span style=color:#f92672>.</span>glob(<span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>*pattern*</span><span style=color:#e6db74>&#34;</span>) <span style=color:#75715e># Eg: *.csv, *.md, *.jpg, etc</span>
-
 all_files <span style=color:#f92672>=</span> list(path<span style=color:#f92672>.</span>iterdir()) <span style=color:#75715e># List all files and folders in `path`</span>
 
 <span style=color:#66d9ef>assert</span> list(path<span style=color:#f92672>.</span>glob(<span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>*</span><span style=color:#e6db74>&#34;</span>)) <span style=color:#f92672>==</span> list(path<span style=color:#f92672>.</span>iterdir()) <span style=color:#75715e># True</span>
